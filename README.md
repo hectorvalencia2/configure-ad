@@ -37,7 +37,6 @@ Create the Domain Controller VM (Windows Server 2022) named “DC-1”. Take not
 
 - In Active Directory Users and Computers (ADUC), create an Organizational Unit (OU) called “_EMPLOYEES”. Create a new OU named “_ADMINS”. Create a new employee named “Jane Doe” (same password) with the username of “jane_admin”. Add jane_admin to the “Domain Admins” Security Group. Log out/close the Remote Desktop connection to DC-1 and log back in as “mydomain.com\jane_admin”. User jane_admin as your admin account from now on
 
-![Screenshot 2024-02-28 150602](https://github.com/hectorvalencia2/configure-ad/assets/161524174/260f4d18-172f-4a5d-b5b8-255155213f7c)
 ![Screenshot 2024-02-28 150751](https://github.com/hectorvalencia2/configure-ad/assets/161524174/c85837d0-090f-4dcc-ab22-de7672cd3383)
 
 - Get DC-1 Private IP Address from the Azure Portal, set Client-1’s DNS settings to the DC’s Private IP address. From the Azure Portal, restart Client-1. Login to Client-1 (Remote Desktop) as the original local admin (labuser) and join it to the domain (computer will restart). Login to the Domain Controller (Remote Desktop) and verify Client-1 shows up in Active Directory Users and Computers (ADUC) inside the “Computers” container on the root of the domain
