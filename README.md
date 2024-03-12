@@ -23,7 +23,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h2>High-Level Deployment and Configuration Steps</h2>
 
 
-![Screenshot 2024-03-12 043057 - Copy](https://github.com/hectorvalencia2/configure-ad/assets/161524174/04ab3c4a-3dd5-4b15-81d2-bc1ae99b52be)
+![Screenshot 2024-03-12 045200](https://github.com/hectorvalencia2/configure-ad/assets/161524174/90545790-3950-4389-a333-ab214e909441)
 
 - Setup Resources in Azure
 Create the Domain Controller VM (Windows Server 2022) named “DC-1”. Take note of the Resource Group and Virtual Network (Vnet) that get created at this time. Set Domain Controller’s NIC Private IP address to be static. Create the Client VM (Windows 10) named “Client-1”. Use the same Resource Group and Vnet that was created in Step 1.a. Ensure that both VMs are in the same Vnet
